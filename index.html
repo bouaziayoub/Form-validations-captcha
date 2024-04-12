@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Validar formulario" />
+    <meta name="keywords" content="Validar, regex, formulario" />
+    <meta name="author" content="Ayoub bouazi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form id="formData" action="procesar.php" method="post" name="formData">
+      <!-- Nombre-->
+      <div class="form-group">
+        <label for="nombre">NOMBRE:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Introduce tu nombre"
+        />
+        <div id="errorNombre" class="error"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Introduce tu email"
+        />
+        <div id="errorEmail" class="error"></div>
+      </div>
+
+      <!-- Confirmar email -->
+      <div class="form-group">
+        <label for="emailConfirm">Confirmar Email:</label>
+        <input
+          type="text"
+          id="emailConfirm"
+          name="emailConfirm"
+          placeholder="Confirma tu email"
+        />
+        <div id="errorEmailConfirm" class="error"></div>
+      </div>
+
+      <!-- Fecha de nacimiento -->
+      <div class="form-group">
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="H">Hombre</option>
+          <option value="M">Mujer</option>
+        </select>
+      </div>
+
+      <!-- DNI/NIE -->
+      <div class="form-group">
+        <label for="dni">DNI/NIE:</label>
+        <input type="text" id="dni" name="dni" placeholder="X00000000Z" />
+        <div id="errorDNI" class="error"></div>
+      </div>
+
+      <!-- Checkbox   HTML - CSS - JS -->
+      <div class="form-group">
+        <label for="checkbox">HTML</label>
+        <input type="checkbox" id="checkbox" name="checkbox" />
+
+        <label for="checkbox">CSS</label>
+        <input type="checkbox" id="checkbox" name="checkbox" />
+
+        <label for="checkbox">JS</label>
+        <input type="checkbox" id="checkbox" name="checkbox" />
+      </div>
+
+      <!-- Checkbox RGPD -->
+      <div class="form-group">
+        <label for="rgpd">Reglamento general de protección de datos:</label>
+        <input type="checkbox" id="rgpd" name="rgpd" />
+        <div id="rgpdError" class="error"></div>
+      </div>
+
+      <!-- Select Full/back/front -->
+      <div class="form-group">
+        <label for="select">Selecciona una opción:</label>
+        <select id="select" name="select">
+          <option value="full">Full</option>
+          <option value="back">Back</option>
+          <option value="front">Front</option>
+        </select>
+      </div>
+
+      <!-- Captcha -->
+      <canvas id="captchaCanvas"></canvas>
+      <div class="form-group">
+        <label for="captcha">Captcha:</label>
+        <input type="text" id="captcha" name="captcha" />
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

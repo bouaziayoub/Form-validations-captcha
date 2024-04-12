@@ -1,0 +1,79 @@
+/* author: Ayoub Bouazi */
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 100px;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  padding: 2px;
+  margin-top: 2px;
+  display: none;
+}
+
+#generatedCaptcha {
+  font-family: "Whisper", cursive;
+
+  margin-bottom: 10px;
+  border: 1px solid #5d1515;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#captcha {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+canvas {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
